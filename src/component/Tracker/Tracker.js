@@ -1,12 +1,12 @@
 import React from 'react'; import './Tracker.css'
-import imgInfo from '../../img/info-pic.jpg'
+import imgInfo from '../img/info-pic.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faNetworkWired, faInfo } from '@fortawesome/free-solid-svg-icons'
 
 
 const Tracker = () => {
     return (
-        <div className='cart'>
+        <div className='cart text-danger'>
             <div className="order-summary-title ">
                 <div>
                     <p >Perrsonal Information <FontAwesomeIcon icon={faInfo} /></p>
@@ -55,7 +55,7 @@ const Tracker = () => {
                     </div>
                 </div>
                 <div className='button mt-12' >
-                    <button className='review-button'>Action Completed<FontAwesomeIcon icon={faNetworkWired} /> </button>
+                    <button className='review-complete'>Action Completed<FontAwesomeIcon icon={faNetworkWired} /> </button>
                 </div>
             </div>
         </div>
