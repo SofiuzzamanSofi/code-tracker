@@ -2,12 +2,19 @@ import React from 'react'; import './Tracker.css'
 import imgInfo from '../img/info-pic.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faNetworkWired, faInfo } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Tracker = () => {
+
+    const notify = () => {
+        toast.success('Finally you finished This work. Well Done.', { position: toast.POSITION.TOP_CENTER })
+    }
+
     return (
         <div className="text-center  text-black sticky top-0  md:mr-[2px] m-2 lg:m-4 my-10">
-            <p >Personal Informaton <FontAwesomeIcon icon={faInfo} /></p>
+            <p className='lg:text-2xl'>Personal Informaton <FontAwesomeIcon icon={faInfo} /></p>
             <img className='h-12 m-auto rounded-full' src={imgInfo} alt="" />
             <div className='text-sm'>
                 <p>Md. Sofiuzzaman Sofi</p>
@@ -50,9 +57,10 @@ const Tracker = () => {
                     <p className='text-lg rounded-full  p-2 bg-gray-200'><span>15</span> second</p>
                 </div>
             </div>
-            <div className='button flex flex-col gap-2 bg-[#FF9900] py-4 rounded text-white' >
+            <div className='button flex flex-col gap-2 bg-[#FF9900] py-4 rounded text-white' onClick={notify}>
                 <button className='review-complete'>Action Completed <FontAwesomeIcon icon={faNetworkWired} /> </button>
             </div>
+            <ToastContainer />
         </div>
     );
 
