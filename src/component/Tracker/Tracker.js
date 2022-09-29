@@ -6,9 +6,9 @@ import { faNetworkWired, faInfo } from '@fortawesome/free-solid-svg-icons'
 
 const Tracker = () => {
     return (
-        <div className="text-black sticky top-0 border-orange-700">
+        <div className="text-center  text-black sticky top-0 border-orange-700">
             <div>
-                <p >Personal Information <FontAwesomeIcon icon={faInfo} /></p>
+                <p >Personal Informaton <FontAwesomeIcon icon={faInfo} /></p>
                 <img className='h-12 m-auto rounded-full' src={imgInfo} alt="" />
                 <div className='text-sm'>
                     <p>Md. Sofiuzzaman Sofi</p>
@@ -52,8 +52,8 @@ const Tracker = () => {
                     <p className='text-lg rounded-full  p-2'><span>15</span> second</p>
                 </div>
             </div>
-            <div className='button mt-12' >
-                <button className='review-complete'>Action Completed<FontAwesomeIcon icon={faNetworkWired} /> </button>
+            <div className='button flex flex-col gap-2 bg-[#FF9900] py-4 rounded text-white' >
+                <button className='review-complete'>Action Completed <FontAwesomeIcon icon={faNetworkWired} /> </button>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import './Under.css'
 
 const Under = () => {
     return (
-        <div className='text-center  text-black my-8'>
+        <div className='text-center  text-black mt-8 border'>
             <div className='my-8'>
                 <h1 className='lg:text-6xl md:text-2xl sm:text-sm'>Some Question and ans for you.</h1>
             </div>
@@ -52,7 +52,7 @@ const Under = () => {
                 </div>
             </div>
             <div className='my-8 '>
-                <h1 className="text-xl my-2">What is the use of useEffect other than loading data.?</h1>
+                <h1 className="text-xl my-2 px-8">What is the use of useEffect other than loading data.?</h1>
                 <div className='text-left px-8 text-justify'>
                     <div className='text-left  text-justify table-color rounded-lg px-8 '>
                         <p >UseEffect have use to do so many works including of loading data. This Hook tell React that your component needs to do something after render. Its have a dependency parameter, So when the dependency is changes the useEffect render his under function work auto . Its a functional React component uses props and/or state to calculate the optional or other valuable value.  </p>

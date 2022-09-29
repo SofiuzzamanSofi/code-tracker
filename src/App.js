@@ -7,10 +7,14 @@ import Footer from './component/Footer/Footer';
 
 function App() {
   return (
-    <div className='container mx-auto bg-slate-200'>
-      <Navbar />
-      <Body />
-      <Under />
+    <div>
+      <div>
+        <Navbar />
+      </div>
+      <div className='container mx-auto bg-slate-200'>
+        <Body />
+        <Under />
+      </div>
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div>
             <div>
-                <div className="navbar bg-primary-focus h-14">
+                <div className="navbar bg-primary-focus h-14 md:px-8">
                     <div>
                         <img className='h-14  rounded' src="https://internationaljournalofresearch.files.wordpress.com/2020/06/coding-vs-programming-2.jpg" alt="" />
                     </div>

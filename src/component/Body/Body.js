@@ -19,7 +19,7 @@ const Body = () => {
             .then(data => setCodeData(data));
     }, []);
     return (
-        <div className='my-4 body-container'>
+        <div className=' body-container'>
             <div className='m-2 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
                 {
                     codeData.map(data => <Carts key={data.id} data={data} />)
