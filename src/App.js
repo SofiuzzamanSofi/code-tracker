@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './component/Navbar/Navbar';
+import Body from './component/Body/Body';
 
 function App() {
   return (
-    <div >
+    <div className='container mx-auto bg-white'>
       <Navbar />
-      <h2>Hia allah whai is that </h2>
+      <Body />
     </div>
   );
 }
