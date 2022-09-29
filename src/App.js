@@ -11,7 +11,7 @@ function App() {
       <div>
         <Navbar />
       </div>
-      <div className='container mx-auto bg-slate-200'>
+      <div className='lg:mx-4 xl:mx-12 bg-slate-200'>
         <Body />
         <Under />
       </div>

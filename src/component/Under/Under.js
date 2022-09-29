@@ -5,7 +5,7 @@ const Under = () => {
     return (
         <div className='text-center  text-black mt-8 border'>
             <div className='my-8'>
-                <h1 className='lg:text-6xl md:text-2xl sm:text-sm'>Some Question and ans for you.</h1>
+                <h1 className='lg:text-6xl md:text-4xl text-xl'>Some Question and ans for you.</h1>
             </div>
             <div className='my-8'>
                 <h1 className='text-xl my-2 px-8'>How does rreact work?</h1>

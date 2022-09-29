@@ -19,14 +19,16 @@ const Body = () => {
             .then(data => setCodeData(data));
     }, []);
     return (
-        <div className=' body-container'>
-            <div className='m-2 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
-                {
-                    codeData.map(data => <Carts key={data.id} data={data} />)
-                }
+        <div className='md:grid lg:grid-cols-4 gap-[2px] md:grid-cols-8  flex flex-col-reverse'>
 
+            <div className='lg:col-span-3 md:col-span-6'>
+                <div className='m-2 grid gap-6  xl:grid-cols-3 md:grid-cols-2  sm:grid-cols-1'>
+                    {
+                        codeData.map(data => <Carts key={data.id} data={data} />)
+                    }
+                </div>
             </div>
-            <div >
+            <div className='lg:col-span-1 md:col-span-2'>
                 <Tracker />
             </div>
         </div>
