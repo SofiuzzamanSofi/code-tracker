@@ -9,7 +9,7 @@ const Tracker = () => {
         <div className='cart text-danger'>
             <div className="order-summary-title ">
                 <div>
-                    <p >Perrsonal Information <FontAwesomeIcon icon={faInfo} /></p>
+                    <p >Personal Information <FontAwesomeIcon icon={faInfo} /></p>
 
                     <img className='h-12 m-auto rounded-full' src={imgInfo} alt="" />
                     <div className='text-sm'>
