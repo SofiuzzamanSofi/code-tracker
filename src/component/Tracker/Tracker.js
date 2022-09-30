@@ -64,11 +64,11 @@ const Tracker = (props) => {
             <div className='my-6'>
                 <p className='text-left '>Add A Break</p>
                 <div className="flex justify-between gap-2 border px-[1px] py-3 rounded-md w-auto my-2 bg-gray-50">
-                    <p onClick={() => breakTimeWork(10)} className='text-sm rounded-full bg-gray-200 p-2 '><span >10</span>s</p>
-                    <p onClick={() => breakTimeWork(20)} className='text-sm rounded-full bg-gray-200 p-2 '><span >20</span>s</p>
-                    <p onClick={() => breakTimeWork(30)} className='text-sm rounded-full bg-gray-200 p-2 '><span>30</span>s</p>
-                    <p onClick={() => breakTimeWork(40)} className='text-sm rounded-full bg-gray-200 p-2 '><span>40</span>s</p>
-                    <p onClick={() => breakTimeWork(50)} className='text-sm rounded-full bg-gray-200 p-2 '><span>50</span>s</p>
+                    <button onClick={() => breakTimeWork(10)} className='text-sm rounded-full bg-gray-200 p-2 '><span >10</span>s</button>
+                    <button onClick={() => breakTimeWork(20)} className='text-sm rounded-full bg-gray-200 p-2 '><span >20</span>s</button>
+                    <button onClick={() => breakTimeWork(30)} className='text-sm rounded-full bg-gray-200 p-2 '><span>30</span>s</button>
+                    <button onClick={() => breakTimeWork(40)} className='text-sm rounded-full bg-gray-200 p-2 '><span>40</span>s</button>
+                    <button onClick={() => breakTimeWork(50)} className='text-sm rounded-full bg-gray-200 p-2 '><span>50</span>s</button>
                 </div>
             </div>
             <div>
