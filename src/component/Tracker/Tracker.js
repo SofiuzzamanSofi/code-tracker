@@ -4,13 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faNetworkWired, faInfo, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addBreakTime, exportAddBreakTime } from '../InfoBase/InfoDataBase';
 
-
-console.log('all last line')
 
 const Tracker = (props) => {
     const { dataPack } = props;
-    console.log(dataPack);
 
     const notify = () => {
         toast.success('Finally you finished This work. Well Done.', { position: toast.POSITION.TOP_CENTER })
@@ -25,8 +23,15 @@ const Tracker = (props) => {
     const breakTimeWork = (time) => {
         const newBreakTime = oldBreakTime + time;
         setBreakTime(newBreakTime);
+        addBreakTime(newBreakTime)
+
     }
 
+    useEffect(() => {
+        const getFromLocalStorage = exportAddBreakTime();
+
+        setBreakTime(getFromLocalStorage);
+    }, [breakTime])
 
     for (const singleData of dataPack) {
         riqTime = riqTime + parseFloat(singleData.timerequired)
@@ -85,8 +90,6 @@ const Tracker = (props) => {
             <ToastContainer />
         </div>
     );
-    console.log('all last line')
-
 };
 
 export default Tracker;
