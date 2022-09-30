@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; import './Tracker.css'
 import imgInfo from '../img/info-pic.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faNetworkWired, faInfo } from '@fortawesome/free-solid-svg-icons'
+import { faNetworkWired, faInfo, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -40,7 +40,7 @@ const Tracker = (props) => {
             <img className='h-12 m-auto rounded-full' src={imgInfo} alt="" />
             <div className='text-sm'>
                 <p>Md. Sofiuzzaman Sofi</p>
-                <p>Dhaka, Bangladesh</p>
+                <p><FontAwesomeIcon icon={faLocationDot} /> Dhaka, Bangladesh</p>
             </div>
             <div className="flex justify-between gap-6 border p-3 rounded-md w-auto my-4">
                 <div >
